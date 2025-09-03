@@ -1,0 +1,164 @@
+[index.html](https://github.com/user-attachments/files/22124586/index.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Artesanal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfaf6;
+      color: #3e2f1c;
+    }
+    header {
+      background: #d2b48c;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav {
+      background: #f3e5d0;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #3e2f1c;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: scale(1.02);
+    }
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .producto-info {
+      padding: 1rem;
+      text-align: center;
+    }
+    .contacto {
+      text-align: center;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #25d366;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      background: #d2b48c;
+      text-align: center;
+      padding: 1rem;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Mi Tienda Artesanal
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="hero">
+      Creaciones únicas en MDF y madera
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="catalogo">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1581093588401-22b9043c6b6b" alt="Producto 1">
+        <div class="producto-info">
+          <h3>Producto 1</h3>
+          <p>Descripción breve del producto.</p>
+          <p><strong>$1000</strong></p>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6" alt="Producto 2">
+        <div class="producto-info">
+          <h3>Producto 2</h3>
+          <p>Descripción breve del producto.</p>
+          <p><strong>$1200</strong></p>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4" alt="Producto 3">
+        <div class="producto-info">
+          <h3>Producto 3</h3>
+          <p>Descripción breve del producto.</p>
+          <p><strong>$1500</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Escribime por WhatsApp para consultas o pedidos:</p>
+    <a href="https://wa.me/59897012332" class="whatsapp-btn" target="_blank">📲 Chatear por WhatsApp</a>
+    <p style="margin-top:1rem;">También podés seguirme en redes sociales:</p>
+    <p>Instagram | Facebook</p>
+  </section>
+
+  <footer>
+    © 2025 Mi Tienda Artesanal - Todos los derechos reservados
+  </footer>
+</body>
+</html>
